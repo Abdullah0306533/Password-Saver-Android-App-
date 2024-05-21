@@ -16,9 +16,6 @@
             android:name=".activities.Edit"
             android:exported="false" />
         <activity
-            android:name=".activities.EditLogin"
-            android:exported="false" />
-        <activity
             android:name=".activities.AddNewLogin"
             android:exported="true" />
         <activity
