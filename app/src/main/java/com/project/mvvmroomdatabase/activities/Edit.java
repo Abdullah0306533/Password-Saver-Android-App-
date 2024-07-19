@@ -89,4 +89,12 @@ public class Edit extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        // Custom behavior when the back button is pressed
+        super.onBackPressed();
+        // Additional code if needed
+        Intent i=new Intent(Edit.this, MainActivity.class);
+        startActivity(i);
+    }
 }

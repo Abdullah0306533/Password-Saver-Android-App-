@@ -138,4 +138,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed() {
+        // Custom behavior when the back button is pressed
+        super.onBackPressed();
+        // Finish the current activity and all parent activities
+        finishAffinity();
+    }
 }

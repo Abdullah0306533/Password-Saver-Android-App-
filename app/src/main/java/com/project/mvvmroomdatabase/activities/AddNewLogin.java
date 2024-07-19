@@ -1,5 +1,6 @@
 package com.project.mvvmroomdatabase.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -54,5 +55,13 @@ public class AddNewLogin extends AppCompatActivity {
         // Set click handler for the layout
         binding.setClickHandler(handler);
         binding.setLoginViewModel(logins);
+    }
+    @Override
+    public void onBackPressed() {
+        // Custom behavior when the back button is pressed
+        super.onBackPressed();
+        // Additional code if needed
+        Intent i=new Intent(AddNewLogin.this, MainActivity.class);
+        startActivity(i);
     }
 }
